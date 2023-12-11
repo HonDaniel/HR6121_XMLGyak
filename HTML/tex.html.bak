@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body style="background:transparent; font-size:10pt; font-family:tahoma">
+
+	<br><br><br>
+	
+	<img src="progterv.png" height="200" border="0" alt="" style="float:right">
+	
+	<font style="font-size:16pt"><b> Programtervezési ismeretek</b> </font>
+	
+	<br><br>
+	A programozási alapok elméleti kiterjesztése. Olyan elméleti alapok elsajátítása, amely minden további programozási nyelvnek része. Modellek és alapvető algoritmusok fejlesztése, használata. Elemi algoritmusok megértése, ezek ábrázolása többféle módon (pszeudokód, folyamatábra, struktrogram).
+	<br> <br
+	<b> Tematika </b>
+	
+	<ul>
+		<li> Listaelem1
+		<li> Listaelem2
+	</ul>
+
+
+
+</body>
+
+
+
+</head>
+</html>
+

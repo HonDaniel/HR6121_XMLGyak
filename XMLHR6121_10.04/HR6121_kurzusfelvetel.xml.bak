@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE HR6121_kurzusfelvetel SYSTEM "HR6121_kurzusfelvetel.dtd">
+
+<HR6121_kurzusfelvetel tanev="2023/2024" egyetem="ME">
+
+    <hallgato id="HR6121.ME">
+        <nev>HontiDaniel</nev>
+        <szulev>2003.04.02.</szulev>
+        <szak evf="5">Programtervezo Informatikus Bsc</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <idopont>Kedd 12:00-13:30</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAL331-B" jovahagyas="igen">
+            <kurzusnev>Webtech</kurzusnev>
+            <kredit>5</kredit>
+            <hely>A1/305</hely>
+            <idopont>Hétfő 12:00-14:00</idopont>
+            <oktato>Agárdi Anita</oktato>
+            <oraado>Agárdi Anita</oraado>
+        </kurzus>
+    </kurzusok>
+
+</HR6121_kurzusfelvetel>

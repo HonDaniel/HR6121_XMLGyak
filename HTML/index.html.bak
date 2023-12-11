@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weblap készítés</title>
+</head>
+<body style="background-image: url('blue.png');">
+
+<table align="center" style="table-layout:fixed; font-family:tahoma; font-size:14pt; border="0">
+
+<tr style="height:120px">
+	<td colspan="3" style="width:980px; text-align:center">
+		<a href="kezdolap.html" target="keret"> <img src="iis_logo.png" width=10%> </a>
+	</td>
+</tr>
+
+<tr style="height:30px; font-weight:bold">
+	<td style="text-align:center">
+		<a href="progterv.html" target="keret"> <font style="color:white; text-decoration:none"> Programtervezési ismeretek </font> </a>
+	</td>
+	
+	<td style="text-align:center">
+		<a href="tex.html" target="keret"> <font style="color:white; text-decoration:none"> Bevezetés a TeX-be </font> </a>
+	</td>
+	
+	<td style="text-align:center">
+		<a href="anal.html" target="keret"> <font style="color:white; text-decoration:none"> Analízis I. </font> </a>
+	</td>
+</tr>
+
+<tr style="height:350px">
+	<td colspan="3" style="text-align:center">
+		<iframe name="keret" src="kezdolap.html" width="100%" height="350" scrolling="auto" frameborder="0" marginheight="10" marginwidth="20">
+			A böngésző nem támogatja a belső keretek használatát"
+		</iframe>
+	</td>
+</tr>
+
+<tr style="height=40px">
+	<td colspan="3" style="width:640px; text-align:center">
+		&copy; Honti Dániel HR6121 2023
+	</td>
+</tr>
+
+</table>
+
+
+
+
+</body>
+</html>
