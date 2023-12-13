@@ -1,0 +1,357 @@
+Autobuszok
+   Autobusz  Attributes: [AutobuszId : 001]
+      Rendszam
+          AAA-111 
+      Tipus
+          Ikarus 
+      max_hely
+          40 
+   Autobusz  Attributes: [AutobuszId : 002]
+      Rendszam
+          BBB-222 
+      Tipus
+          MAN 
+      max_hely
+          45 
+   Autobusz  Attributes: [AutobuszId : 003]
+      Rendszam
+          CCC-333 
+      Tipus
+          Volvo 
+      max_hely
+          50 
+   Autobusz  Attributes: [AutobuszId : 004]
+      Rendszam
+          DDD-444 
+      Tipus
+          Ikarus 
+      max_hely
+          40 
+   Autobusz  Attributes: [AutobuszId : 005]
+      Rendszam
+          EEE-555 
+      Tipus
+          Ikarus 
+      max_hely
+          40 
+   Autobusz  Attributes: [AutobuszId : 006]
+      Rendszam
+          FFF-666 
+      Tipus
+          Ikarus 
+      max_hely
+          40 
+   Autobusz  Attributes: [AutobuszId : 007]
+      Rendszam
+          GGG-777 
+      Tipus
+          Volvo 
+      max_hely
+          50 
+   Autobusz  Attributes: [AutobuszId : 008]
+      Rendszam
+          HHH-888 
+      Tipus
+          Ikarus 
+      max_hely
+          40 
+   Autobusz  Attributes: [AutobuszId : 009]
+      Rendszam
+          III-999 
+      Tipus
+          MAN 
+      max_hely
+          45 
+Soforok
+   Sofor  Attributes: [SoforId : 101]
+      Jegykiadoszam
+          A54321 
+      Nev
+          Major Daniel 
+      AutobuszId_FK
+          009 
+   Sofor  Attributes: [SoforId : 102]
+      Jegykiadoszam
+          B12345 
+      Nev
+          Tancos Judit 
+      AutobuszId_FK
+          005 
+   Sofor  Attributes: [SoforId : 103]
+      Jegykiadoszam
+          C98765 
+      Nev
+          Beno Rezso 
+      AutobuszId_FK
+          003 
+   Sofor  Attributes: [SoforId : 104]
+      Jegykiadoszam
+          D56789 
+      Nev
+          Prezs Peter 
+      AutobuszId_FK
+          008 
+   Sofor  Attributes: [SoforId : 105]
+      Jegykiadoszam
+          E23456 
+      Nev
+          Kont Fanni 
+      AutobuszId_FK
+          001 
+   Sofor  Attributes: [SoforId : 106]
+      Jegykiadoszam
+          F65432 
+      Nev
+          Kann András 
+      AutobuszId_FK
+          002 
+   Sofor  Attributes: [SoforId : 107]
+      Jegykiadoszam
+          G34567 
+      Nev
+          Furko Evelin 
+      AutobuszId_FK
+          003 
+   Sofor  Attributes: [SoforId : 108]
+      Jegykiadoszam
+          H76543 
+      Nev
+          Labas Lajos 
+      AutobuszId_FK
+          004 
+   Sofor  Attributes: [SoforId : 109]
+      Jegykiadoszam
+          I45678 
+      Nev
+          Bence Nandor 
+      AutobuszId_FK
+          006 
+Karbantartok
+   Karbantarto  Attributes: [KarbantartoId : 201]
+      Javitoszam
+          A0001 
+      Nev
+          Ant Istvan 
+      AutobuszId_FK
+          004 
+   Karbantarto  Attributes: [KarbantartoId : 202]
+      Javitoszam
+          B0002 
+      Nev
+          Várti Ádám 
+      AutobuszId_FK
+          003 
+   Karbantarto  Attributes: [KarbantartoId : 203]
+      Javitoszam
+          C0003 
+      Nev
+          Ács Viktória 
+      AutobuszId_FK
+          001 
+   Karbantarto  Attributes: [KarbantartoId : 204]
+      Javitoszam
+          D0004 
+      Nev
+          Csik Zoltán 
+      AutobuszId_FK
+          008 
+   Karbantarto  Attributes: [KarbantartoId : 205]
+      Javitoszam
+          E0005 
+      Nev
+          Szabó Imre 
+      AutobuszId_FK
+          009 
+Eszkozok
+   Eszkoz  Attributes: [EszkozId : 301]
+      Termekszam
+          97 
+      Gyarto
+          Makita 
+      Ev
+          1 
+      KarbantartoId_FK
+          201 
+   Eszkoz  Attributes: [EszkozId : 302]
+      Termekszam
+          42 
+      Gyarto
+          Bosch 
+      Ev
+          3 
+      KarbantartoId_FK
+          202 
+   Eszkoz  Attributes: [EszkozId : 303]
+      Termekszam
+          55 
+      Gyarto
+          Bosch 
+      Ev
+          5 
+      KarbantartoId_FK
+          203 
+   Eszkoz  Attributes: [EszkozId : 304]
+      Termekszam
+          12 
+      Gyarto
+          Makita 
+      Ev
+          2 
+      KarbantartoId_FK
+          204 
+   Eszkoz  Attributes: [EszkozId : 305]
+      Termekszam
+          08 
+      Gyarto
+          Bosch 
+      Ev
+          7 
+      KarbantartoId_FK
+          205 
+Utvonalak
+   Utvonal  Attributes: [UtvonailId : 401]
+      KezdAll
+          Buza Ter 
+      VegAll
+          Tapolca 
+      Km
+          8 
+   Utvonal  Attributes: [UtvonalId : 402]
+      KezdAll
+          Buza Ter 
+      VegAll
+          Szirma 
+      km
+          9 
+   Utvonal  Attributes: [UtvonalId : 403]
+      KezdAll
+          Felso-Majlath 
+      VegAll
+          Lillafured 
+      km
+          6 
+   Utvonal  Attributes: [UtvonalId : 404]
+      KezdAll
+          Ujgyori Foter 
+      VegAll
+          Pereces 
+      km
+          7 
+   Utvonal  Attributes: [UtvonalId : 405]
+      KezdAll
+          Avas Kilato 
+      VegAll
+          Centrum 
+      km
+          5 
+Haladok
+   Halad
+      UtvonalId_FK
+          401 
+      AutobuszID_FK
+          003 
+      Menetido
+          25 
+   Halad
+      UtvonalId_FK
+          404 
+      AutobuszID_FK
+          001 
+      Menetido
+          26 
+   Halad
+      UtvonalId_FK
+          405 
+      AutobuszID_FK
+          007 
+      Menetido
+          19 
+   Halad
+      UtvonalId_FK
+          402 
+      AutobuszID_FK
+          002 
+      Menetido
+          24 
+   Halad
+      UtvonalId_FK
+          404 
+      AutobuszID_FK
+          003 
+      Menetido
+          21 
+   Halad
+      UtvonalId_FK
+          403 
+      AutobuszID_FK
+          009 
+      Menetido
+          20 
+   Halad
+      UtvonalId_FK
+         406 
+      AutobuszID_FK
+          001 
+      Menetido
+          23 
+Felugyelok
+   Felugyelo  Attributes: [FelugyeloId : 501]
+      Nev
+          Pataki Csanad 
+      SoforId_FK
+          102 
+      KarbantartoId_FK
+          204 
+      Elerhetoseg
+         Irodaszam
+             11 
+         Email
+             pat.csan@gmail.com 
+   Felugyelo  Attributes: [FelugyeloId : 502]
+      Nev
+          Gabor Borbala 
+      SoforId_FK
+          104 
+      KarbantartoId_FK
+          202 
+      Elerhetoseg
+         Irodaszam
+             12 
+         Email
+             gab.bor@gmail.com 
+   Felugyelo  Attributes: [FelugyeloId : 503]
+      Nev
+          Szabó Oszkár 
+      SoforId_FK
+          103 
+      KarbantartoId_FK
+          201 
+      Elerhetoseg
+         Irodaszam
+             13 
+         Email
+             szab.osz@gmail.com 
+   Felugyelo  Attributes: [FelugyeloId : 504]
+      Nev
+          szab.osz@gmail.com 
+      SoforId_FK
+          108 
+      KarbantartoId_FK
+          203 
+      Elerhetoseg
+         Irodaszam
+             14 
+         Email
+             hegy.bor@gmail.com 
+   Felugyelo  Attributes: [FelugyeloId : 505]
+      Nev
+          Nagy Andrea 
+      SoforId_FK
+          109 
+      KarbantartoId_FK
+          205 
+      Elerhetoseg
+         Irodaszam
+             15 
+         Email
+             nagy.and@gmail.com 

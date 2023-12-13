@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+    <xs:element name="Palyaudvar">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="KarbantartoFelsz-ek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="KarbantartoFelsz" type="KarbantartoFelszTip" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Karbantartok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="karbantarto" type="KarbantartoTip" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Autobuszok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Autobusz" type="AutobuszTip" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="Soforok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Sofor" type="SoforTip" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="Utvonalak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Utvonal" type="UtvonalTip" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="Felugyelok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Felugyelo" type="v-hTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:unique name="KarbantartoFelszId_FK">
+            <xs:selector xpath="KarbantartoFelszek/KarbantartoFelsz"/>
+            <xs:field xpath="@KarbantartoFelszId"/>
+        </xs:unique>
+
+        <xs:unique name="KarbantartokId_FK">
+            <xs:selector xpath="Karbantartok/Karbantarto"/>
+            <xs:field xpath="@KarbantartoID"/>
+        </xs:unique>
+
+        <xs:unique name="SoforokId_FK">
+            <xs:selector xpath="Soforok/Sofor"/>
+            <xs:field xpath="@SoforId"/>
+        </xs:unique>
+
+		<xs:keyref name="AutobuszID_FK-Karbantarto" refer="AutobuszID_FK">
+			<xs:selector xpath="Karbantartok/Karbantarto/AutobuszId_FK"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		
+		<xs:keyref name="AutobuszID_FK-Sofor" refer="AutobuszID_FK">
+			<xs:selector xpath="Soforok/Sofor/AutobuszId_FK"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="AutobuszID_FK-Halad" refer="AutobuszID_FK">
+			<xs:selector xpath="Haladas/Halad/AutobuszId_FK"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="KarbantartoID_FK-KarbantartoFelsz" refer="KarbantartoID_FK">
+			<xs:selector xpath="KarbantartoFelszek/KarbantartoFelsz/KarbantartoId_FK"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="KarbantartoID_FK-Felugyelo" refer="KarbantartoID_FK">
+			<xs:selector xpath="Felugyelok/Felugyelo/KarbantartoId_FK"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+
+		<xs:keyref name="SoforID_FK-Felugyelo" refer="SoforID_FK">
+			<xs:selector xpath="Felugyelok/Felugyelo/SoforId_FK"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+    </xs:element>
+
+    <xs:complexType name="KarbantartoFelszTipus">
+        <xs:sequence>
+            <xs:element name="Gyarto" type="xs:string"/>
+            <xs:element name="HasznaltEvek" type="xs:Integer"/>
+            <xs:element name="TermekSzam" type="xs:integer"/>
+            <xs:element name="KarbantartoId_FK" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="KarbantartoFelszId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="KarbantartoTipus">
+        <xs:sequence>
+            <xs:element name="Nev" type="xs:string"/>
+            <xs:element name="JavitoiSzam" type="xs:integer"/>
+            <xs:element name="AutobuszId_FK" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="KarbantartoId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="AutobuszTipus">
+        <xs:sequence>
+            <xs:element name="Max_hely" type="xs:integer"/>
+            <xs:element name="Tipus" type="xs:string"/>
+            <xs:element name="Rendszam" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="AutobuszId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+
+    <xs:complexType name="SoforTipus">
+        <xs:sequence>
+            <xs:element name="JegykiadoSzam " type="xs:integer"/>
+            <xs:element name="Nev" type="xs:string"/>
+            <xs:element name="TermekSzam" type="xs:string"/>
+            <xs:element name="AutobuszId_FK" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="SoforId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="UtvonalTipus">
+        <xs:sequence>
+            <xs:element name="KezdetiAll" type="xs:string"/>
+            <xs:element name="VegAll" type="xs:string"/>
+            <xs:element name="km" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="UtvonalId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+	<xs:complexType name="FelugyeloTipus">
+		<xs:sequence>
+			<xs:element name="Nev " type="xs:String"/>
+			<xs:element name="Telefonszam" type="xs:integer"/>
+			<xs:element name="email" type="xs:string"/>
+			<xs:element name="irodaszam" type="xs:integer"/>
+			<xs:element name="SoforId_FK" type="xs:integer"/>
+			<xs:element name="KarbantartoId_FK" type="xs:integer"/>
+		</xs:sequence>
+		<xs:attribute name="KarbantartoId" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:pattern value="[0-9][0-9][0-9]" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+    <xs:complexType name="HaladTipus">
+        <xs:sequence>
+            <xs:element name="AutobuszId_FK" type="xs:integer"/>
+            <xs:element name="UtvonalId_FK" type="xs:integer"/>
+			<xs:element name="menetido" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

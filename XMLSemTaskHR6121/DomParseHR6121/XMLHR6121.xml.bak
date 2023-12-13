@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Palyaudvar xsi:noNameSpaceSchemaLocation="./XMLSchemaHR6121.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!--Autóbuszok pédányosítása-->
+	
+	<Autobuszok>
+	
+		<Autobusz AutobuszId="001">
+			<Rendszam> AAA-111 </Rendszam>
+			<Tipus> Ikarus </Tipus>
+			<max_hely> 40 </max_hely>
+		</Autobusz>
+
+		<Autobusz AutobuszId="002">
+			<Rendszam> BBB-222 </Rendszam>
+			<Tipus> MAN </Tipus>
+			<max_hely> 45 </max_hely>
+		</Autobusz>
+		
+		<Autobusz AutobuszId="003">
+			<Rendszam> CCC-333 </Rendszam>
+			<Tipus> Volvo </Tipus>
+			<max_hely> 50 </max_hely>
+		</Autobusz>
+
+		<Autobusz AutobuszId="004">
+			<Rendszam> DDD-444 </Rendszam>
+			<Tipus> Ikarus </Tipus>
+			<max_hely> 40 </max_hely>
+		</Autobusz>
+
+		<Autobusz AutobuszId="005">
+			<Rendszam> EEE-555 </Rendszam>
+			<Tipus> Ikarus </Tipus>
+			<max_hely> 40 </max_hely>
+		</Autobusz>
+	
+		<Autobusz AutobuszId="006">
+			<Rendszam> FFF-666 </Rendszam>
+			<Tipus> Ikarus </Tipus>
+			<max_hely> 40 </max_hely>
+		</Autobusz>
+
+		<Autobusz AutobuszId="007">
+			<Rendszam> GGG-777 </Rendszam>
+			<Tipus> Volvo </Tipus>
+			<max_hely> 50 </max_hely>
+		</Autobusz>
+
+		<Autobusz AutobuszId="008">
+			<Rendszam> HHH-888 </Rendszam>
+			<Tipus> Ikarus </Tipus>
+			<max_hely> 40 </max_hely>
+		</Autobusz>
+	
+		<Autobusz AutobuszId="009">
+			<Rendszam> III-999 </Rendszam>
+			<Tipus> MAN </Tipus>
+			<max_hely> 45 </max_hely>
+		</Autobusz>
+	
+	</Autobuszok>
+
+	<Soforok>
+	
+		<Sofor SoforId="101">
+			<Jegykiadoszam> A54321 </Jegykiadoszam>
+			<Nev> Major Daniel </Nev>
+			<AutobuszId_FK> 009 </AutobuszId_FK>
+		</Sofor>
+
+		<Sofor SoforId="102">
+			<Jegykiadoszam> B12345 </Jegykiadoszam>
+			<Nev> Tancos Judit </Nev>
+			<AutobuszId_FK> 005 </AutobuszId_FK>
+		</Sofor>
+
+		<Sofor SoforId="103">
+			<Jegykiadoszam> C98765 </Jegykiadoszam>
+			<Nev> Beno Rezso </Nev>
+			<AutobuszId_FK> 003 </AutobuszId_FK>
+		</Sofor>
+
+		<Sofor SoforId="104">
+			<Jegykiadoszam> D56789 </Jegykiadoszam>
+			<Nev> Prezs Peter </Nev>
+			<AutobuszId_FK> 008 </AutobuszId_FK>
+		</Sofor>
+
+		<Sofor SoforId="105">
+			<Jegykiadoszam> E23456 </Jegykiadoszam>
+			<Nev> Kont Fanni </Nev>
+			<AutobuszId_FK> 001 </AutobuszId_FK>
+		</Sofor>
+
+		<Sofor SoforId="106">
+			<Jegykiadoszam> F65432 </Jegykiadoszam>
+			<Nev> Kann András </Nev>
+			<AutobuszId_FK> 002 </AutobuszId_FK>
+		</Sofor>
+
+		<Sofor SoforId="107">
+			<Jegykiadoszam> G34567 </Jegykiadoszam>
+			<Nev> Furko Evelin </Nev>
+			<AutobuszId_FK> 003 </AutobuszId_FK>
+		</Sofor>
+
+		<Sofor SoforId="108">
+			<Jegykiadoszam> H76543 </Jegykiadoszam>
+			<Nev> Labas Lajos </Nev>
+			<AutobuszId_FK> 004 </AutobuszId_FK>
+		</Sofor>
+		
+		<Sofor SoforId="109">
+			<Jegykiadoszam> I45678 </Jegykiadoszam>
+			<Nev> Bence Nandor </Nev>
+			<AutobuszId_FK> 006 </AutobuszId_FK>
+		</Sofor>
+	
+	</Soforok>
+	
+	<Karbantartok>
+		
+		<Karbantarto KarbantartoId="201">
+			<Javitoszam> A0001 </Javitoszam>
+			<Nev> Ant Istvan </Nev>
+			<AutobuszId_FK> 004 </AutobuszId_FK>	
+		</Karbantarto>
+
+		<Karbantarto KarbantartoId="202">
+			<Javitoszam> B0002 </Javitoszam>
+			<Nev> Várti Ádám </Nev>
+			<AutobuszId_FK> 003 </AutobuszId_FK>	
+		</Karbantarto>
+
+		<Karbantarto KarbantartoId="203">
+			<Javitoszam> C0003 </Javitoszam>
+			<Nev> Ács Viktória </Nev>
+			<AutobuszId_FK> 001 </AutobuszId_FK>	
+		</Karbantarto>
+
+		<Karbantarto KarbantartoId="204">
+			<Javitoszam> D0004 </Javitoszam>
+			<Nev> Csik Zoltán </Nev>
+			<AutobuszId_FK> 008 </AutobuszId_FK>	
+		</Karbantarto>
+
+		<Karbantarto KarbantartoId="205">
+			<Javitoszam> E0005 </Javitoszam>
+			<Nev> Szabó Imre </Nev>
+			<AutobuszId_FK> 009 </AutobuszId_FK>	
+		</Karbantarto>
+	</Karbantartok>
+	
+	<Eszkozok>
+		<Eszkoz EszkozId="301">
+			<Termekszam> 97 </Termekszam>
+			<Gyarto> Makita </Gyarto>
+			<Ev> 1 </Ev>
+			<KarbantartoId_FK> 201 </KarbantartoId_FK>
+		</Eszkoz>
+	
+		<Eszkoz EszkozId="302">
+			<Termekszam> 42 </Termekszam>
+			<Gyarto> Bosch </Gyarto>
+			<Ev> 3 </Ev>
+			<KarbantartoId_FK> 202 </KarbantartoId_FK>
+		</Eszkoz>
+		
+		<Eszkoz EszkozId="303">
+			<Termekszam> 55 </Termekszam>
+			<Gyarto> Bosch </Gyarto>
+			<Ev> 5 </Ev>
+			<KarbantartoId_FK> 203 </KarbantartoId_FK>
+		</Eszkoz>
+		
+		<Eszkoz EszkozId="304">
+			<Termekszam> 12 </Termekszam>
+			<Gyarto> Makita </Gyarto>
+			<Ev> 2 </Ev>
+			<KarbantartoId_FK> 204 </KarbantartoId_FK>
+		</Eszkoz>
+		
+		<Eszkoz EszkozId="305">
+			<Termekszam> 08 </Termekszam>
+			<Gyarto> Bosch </Gyarto>
+			<Ev> 7 </Ev>
+			<KarbantartoId_FK> 205 </KarbantartoId_FK>
+		</Eszkoz>
+	
+	</Eszkozok>
+	
+	<Utvonalak>
+		<Utvonal UtvonailId="401">
+			<KezdAll> Buza Ter </KezdAll>
+			<VegAll> Tapolca </VegAll>
+			<Km> 8 </Km>
+		</Utvonal>
+		
+		<Utvonal UtvonalId="402">
+			<KezdAll> Buza Ter </KezdAll>
+			<VegAll> Szirma </VegAll>
+			<km> 9 </km>
+		</Utvonal>
+		
+		<Utvonal UtvonalId="403">
+			<KezdAll> Felso-Majlath </KezdAll>
+			<VegAll> Lillafured </VegAll>
+			<km> 6 </km>
+		</Utvonal>
+		
+		<Utvonal UtvonalId="404">
+			<KezdAll> Ujgyori Foter </KezdAll>
+			<VegAll> Pereces </VegAll>
+			<km> 7 </km>
+		</Utvonal>
+		
+		<Utvonal UtvonalId="405">
+			<KezdAll> Avas Kilato </KezdAll>
+			<VegAll> Centrum </VegAll>
+			<km> 5 </km>
+		</Utvonal>
+		
+	</Utvonalak>
+
+	<Haladok>
+		<Halad>
+			<UtvonalId_FK> 401 </UtvonailId_FK>
+			<AutobuszID_FK> 003 </AutobuszID_FK>
+			<Menetido> 25 </Menetido>
+		</Halad>
+	
+		<Halad>
+			<UtvonalId_FK> 404 </UtvonailId_FK>
+			<AutobuszID_FK> 001 </AutobuszID_FK>
+			<Menetido> 26 </Menetido>
+		</Halad>
+
+		<Halad>
+			<UtvonalId_FK> 405 </UtvonailId_FK>
+			<AutobuszID_FK> 007 </AutobuszID_FK>
+			<Menetido> 19 </Menetido>
+		</Halad>
+
+		<Halad>
+			<UtvonalId_FK> 402 </UtvonailId_FK>
+			<AutobuszID_FK> 002 </AutobuszID_FK>
+			<Menetido> 24 </Menetido>
+		</Halad>
+		
+		<Halad>
+			<UtvonalId_FK> 404 </UtvonailId_FK>
+			<AutobuszID_FK> 003 </AutobuszID_FK>
+			<Menetido> 21 </Menetido>
+		</Halad>
+		
+		<Halad>
+			<UtvonalId_FK> 403 </UtvonailId_FK>
+			<AutobuszID_FK> 009 </AutobuszID_FK>
+			<Menetido> 20 </Menetido>
+		</Halad>
+		
+		<Halad>
+			<UtvonalId_FK>406 </UtvonailId_FK>
+			<AutobuszID_FK> 001 </AutobuszID_FK>
+			<Menetido> 23 </Menetido>
+		</Halad>
+	
+	</Haladok>
+	
+	<Felugyelok>
+		<Felugyelo FelugyeloId="501">
+			<Nev> Pataki Csanad </Nev>
+			<SoforId_FK> 102 </SoforId_FK>
+			<KarbantartoId_FK> 204 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 11 </Irodaszam>
+				<Email> pat.csan@gmail.com </Email>
+			</Elerhetoseg>
+		</Felugyelo>
+		
+		<Felugyelo FelugyeloId="502">
+			<Nev> Gabor Borbala </Nev>
+			<SoforId_FK> 104 </SoforId_FK>
+			<KarbantartoId_FK> 202 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 12 </Irodaszam>
+				<Email> gab.bor@gmail.com </Email>
+			</Elerhetoseg>
+		</Felugyelo>
+		
+		<Felugyelo FelugyeloId="503">
+			<Nev> Szabó Oszkár </Nev>
+			<SoforId_FK> 103 </SoforId_FK>
+			<KarbantartoId_FK> 201 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 13 </Irodaszam>
+				<Email> szab.osz@gmail.com </Email>
+			</Elerhetoseg>
+		</Felugyelo>
+		
+		<Felugyelo FelugyeloId="504">
+			<Nev> szab.osz@gmail.com </Nev>
+			<SoforId_FK> 108 </SoforId_FK>
+			<KarbantartoId_FK> 203 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 14 </Irodaszam>
+				<Email> hegy.bor@gmail.com </Email>
+			</Elerhetoseg>
+		</Felugyelo>
+		
+		<Felugyelo FelugyeloId="505">
+			<Nev> Nagy Andrea </Nev>
+			<SoforId_FK> 109 </SoforId_FK>
+			<KarbantartoId_FK> 205 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 15 </Irodaszam>
+				<Email> nagy.and@gmail.com </Email>
+			</Elerhetoseg>
+		</Felugyelo>
+		
+	</Felugyelok>
+
+</Palyaudvar>
