@@ -67,7 +67,7 @@
 		<Sofor SoforId="101">
 			<Jegykiadoszam> A54321 </Jegykiadoszam>
 			<Nev> Major Daniel </Nev>
-			<AutobuszId_FK> 009 </BID_fk>
+			<AutobuszId_FK> 009 </AutobuszId_FK>
 		</Sofor>
 
 		<Sofor SoforId="102">
@@ -155,35 +155,35 @@
 	
 	<Eszkozok>
 		<Eszkoz EszkozId="301">
-			<Termekszma> 97 </Termekszam>
+			<Termekszam> 97 </Termekszam>
 			<Gyarto> Makita </Gyarto>
 			<Ev> 1 </Ev>
 			<KarbantartoId_FK> 201 </KarbantartoId_FK>
 		</Eszkoz>
 	
 		<Eszkoz EszkozId="302">
-			<Termekszma> 42 </Termekszam>
+			<Termekszam> 42 </Termekszam>
 			<Gyarto> Bosch </Gyarto>
 			<Ev> 3 </Ev>
 			<KarbantartoId_FK> 202 </KarbantartoId_FK>
 		</Eszkoz>
 		
 		<Eszkoz EszkozId="303">
-			<Termekszma> 55 </Termekszam>
+			<Termekszam> 55 </Termekszam>
 			<Gyarto> Bosch </Gyarto>
 			<Ev> 5 </Ev>
 			<KarbantartoId_FK> 203 </KarbantartoId_FK>
 		</Eszkoz>
 		
 		<Eszkoz EszkozId="304">
-			<Termekszma> 12 </Termekszam>
+			<Termekszam> 12 </Termekszam>
 			<Gyarto> Makita </Gyarto>
 			<Ev> 2 </Ev>
 			<KarbantartoId_FK> 204 </KarbantartoId_FK>
 		</Eszkoz>
 		
 		<Eszkoz EszkozId="305">
-			<Termekszma> 08 </Termekszam>
+			<Termekszam> 08 </Termekszam>
 			<Gyarto> Bosch </Gyarto>
 			<Ev> 7 </Ev>
 			<KarbantartoId_FK> 205 </KarbantartoId_FK>
@@ -226,47 +226,110 @@
 
 	<Haladok>
 		<Halad>
-			<UtvonalId_FK> 401 </UtvonailId_FK>
+			<UtvonalId_FK> 401 </UtvonalId_FK>
 			<AutobuszID_FK> 003 </AutobuszID_FK>
 			<Menetido> 25 </Menetido>
 		</Halad>
 	
 		<Halad>
-			<UtvonalId_FK> 404 </UtvonailId_FK>
+			<UtvonalId_FK> 404 </UtvonalId_FK>
 			<AutobuszID_FK> 001 </AutobuszID_FK>
 			<Menetido> 26 </Menetido>
 		</Halad>
 
 		<Halad>
-			<UtvonalId_FK> 405 </UtvonailId_FK>
+			<UtvonalId_FK> 405 </UtvonalId_FK>
 			<AutobuszID_FK> 007 </AutobuszID_FK>
 			<Menetido> 19 </Menetido>
 		</Halad>
 
 		<Halad>
-			<UtvonalId_FK> 402 </UtvonailId_FK>
+			<UtvonalId_FK> 402 </UtvonalId_FK>
 			<AutobuszID_FK> 002 </AutobuszID_FK>
 			<Menetido> 24 </Menetido>
 		</Halad>
 		
 		<Halad>
-			<UtvonalId_FK> 404 </UtvonailId_FK>
+			<UtvonalId_FK> 404 </UtvonalId_FK>
 			<AutobuszID_FK> 003 </AutobuszID_FK>
 			<Menetido> 21 </Menetido>
 		</Halad>
 		
 		<Halad>
-			<UtvonalId_FK> 403 </UtvonailId_FK>
+			<UtvonalId_FK> 403 </UtvonalId_FK>
 			<AutobuszID_FK> 009 </AutobuszID_FK>
 			<Menetido> 20 </Menetido>
 		</Halad>
 		
 		<Halad>
-			<UtvonalId_FK>406 </UtvonailId_FK>
+			<UtvonalId_FK>406 </UtvonalId_FK>
 			<AutobuszID_FK> 001 </AutobuszID_FK>
 			<Menetido> 23 </Menetido>
 		</Halad>
 	
 	</Haladok>
+	
+	<Felugyelok>
+		<Felugyelo FelugyeloId="501">
+			<Nev> Pataki Csanad </Nev>
+			<SoforId_FK> 102 </SoforId_FK>
+			<KarbantartoId_FK> 204 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 11 </Irodaszam>
+				<Email> pat.csan@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 584 888 </Telefonszam>
+			<Telefonszam> +36 55 563 979 </Telefonszam>
+		</Felugyelo>
+		
+		<Felugyelo FelugyeloId="502">
+			<Nev> Gabor Borbala </Nev>
+			<SoforId_FK> 104 </SoforId_FK>
+			<KarbantartoId_FK> 202 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 12 </Irodaszam>
+				<Email> gab.bor@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 010 226 </Telefonszam>
+			<Telefonszam> +36 55 686 186 </Telefonszam>
+		</Felugyelo>
+		
+		<Felugyelo FelugyeloId="503">
+			<Nev> Szabó Oszkár </Nev>
+			<SoforId_FK> 103 </SoforId_FK>
+			<KarbantartoId_FK> 201 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 13 </Irodaszam>
+				<Email> szab.osz@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 686 186 </Telefonszam>
+			<Telefonszam> +36 55 010 226 </Telefonszam>
+		</Felugyelo>
+		
+		<Felugyelo FelugyeloId="504">
+			<Nev> szab.osz@gmail.com </Nev>
+			<SoforId_FK> 108 </SoforId_FK>
+			<KarbantartoId_FK> 203 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 14 </Irodaszam>
+				<Email> hegy.bor@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 563 979 </Telefonszam>
+			<Telefonszam> +36 55 584 888 </Telefonszam>
+		</Felugyelo>
+		
+		<Felugyelo FelugyeloId="505">
+			<Nev> Nagy Andrea </Nev>
+			<SoforId_FK> 109 </SoforId_FK>
+			<KarbantartoId_FK> 205 </KarbantartoId_FK>
+			<Elerhetoseg>
+				<Irodaszam> 15 </Irodaszam>
+				<Email> nagy.and@gmail.com </Email>
+			</Elerhetoseg>
+			<Telefonszam> 06 55 923 742 </Telefonszam>
+			<Telefonszam> +36 55 923 742 </Telefonszam>
+		</Felugyelo>
+		
+	</Felugyelok>
 
 </Palyaudvar>

@@ -49,26 +49,24 @@
                 <xs:element name="Felugyelok">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Felugyelo" type="v-hTipus" minOccurs="0" maxOccurs="unbounded"/>
+                            <xs:element name="Felugyelo" type="FelugyeloTip" minOccurs="0" maxOccurs="unbounded"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+
+				<xs:element name="Haladok">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Halad" type="HaladTip" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
             </xs:sequence>
         </xs:complexType>
 
         <xs:unique name="KarbantartoFelszId_FK">
             <xs:selector xpath="KarbantartoFelszek/KarbantartoFelsz"/>
             <xs:field xpath="@KarbantartoFelszId"/>
-        </xs:unique>
-
-        <xs:unique name="KarbantartokId_FK">
-            <xs:selector xpath="Karbantartok/Karbantarto"/>
-            <xs:field xpath="@KarbantartoID"/>
-        </xs:unique>
-
-        <xs:unique name="SoforokId_FK">
-            <xs:selector xpath="Soforok/Sofor"/>
-            <xs:field xpath="@SoforId"/>
         </xs:unique>
 
 		<xs:keyref name="AutobuszID_FK-Karbantarto" refer="AutobuszID_FK">
@@ -83,11 +81,6 @@
 
 		<xs:keyref name="AutobuszID_FK-Halad" refer="AutobuszID_FK">
 			<xs:selector xpath="Haladas/Halad/AutobuszId_FK"/>
-			<xs:field xpath="."/>
-		</xs:keyref>
-
-		<xs:keyref name="KarbantartoID_FK-KarbantartoFelsz" refer="KarbantartoID_FK">
-			<xs:selector xpath="KarbantartoFelszek/KarbantartoFelsz/KarbantartoId_FK"/>
 			<xs:field xpath="."/>
 		</xs:keyref>
 
